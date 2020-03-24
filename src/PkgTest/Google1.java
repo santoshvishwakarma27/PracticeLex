@@ -10,6 +10,6 @@ public class Google1 {
 	  System.setProperty("webdriver.gecko.driver","C:\\Users\\santosh\\workspace\\Test\\geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://www.google.co.in/");
-		System.out.print("jenkins test webhook");
+		System.out.print("jenkins test SCM polling");
   }
 }
