@@ -1,16 +1,15 @@
+package PkgTest;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
-public class Google {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		System.setProperty("webdriver.gecko.driver","C:\\Users\\santosh\\workspace\\Test\\geckodriver.exe");
+public class Google1 {
+  @Test
+  public void f() {
+	  System.setProperty("webdriver.gecko.driver","C:\\Users\\santosh\\workspace\\Test\\geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://www.google.co.in/");
 		System.out.print("Santosh Vishwakarma");
-
-	}
-
+  }
 }
