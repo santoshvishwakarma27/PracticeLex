@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 @Listeners(PkgTest.ListenerEx.class)
 public class Google3 {
 	public int invokeCount=0;
-  //@Test(groups="Pass")
+  @Test(groups="Pass")
   public void launchGoogle3A() {
 	  System.setProperty("webdriver.gecko.driver","C:\\Users\\santosh\\workspace\\Test\\geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
@@ -20,14 +20,14 @@ public class Google3 {
 		driver.quit();
   }
   
-  //@Test(groups="Fail")
+  @Test(groups="Fail")
   public void launchGoogle3B() {
 	  System.setProperty("webdriver.gecko.driver","C:\\Users\\santosh\\workspace\\Test\\geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://www.google.co.in/");
 		System.out.print("jenkins test SCM polling failed TC");
 		String title=driver.getTitle();
-		Assert.assertEquals(title, "Google1");
+		Assert.assertEquals(title, "Google");
 		driver.quit();
   }
   
