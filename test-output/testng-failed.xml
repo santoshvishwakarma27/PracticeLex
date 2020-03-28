@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <parameter name="Username" value="Santosh"/>
     <classes>
-      <class name="PkgTest.Google1">
+      <class name="PkgTest.Google3">
         <methods>
-          <include name="f"/>
+          <include name="launchGoogle3B"/>
         </methods>
-      </class> <!-- PkgTest.Google1 -->
+      </class> <!-- PkgTest.Google3 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
