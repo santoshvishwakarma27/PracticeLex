@@ -6,7 +6,9 @@
     <classes>
       <class name="PkgTest.Google3">
         <methods>
+          <include name="launchGoogle3C"/>
           <include name="launchGoogle3B"/>
+          <include name="launchGoogle3A"/>
         </methods>
       </class> <!-- PkgTest.Google3 -->
     </classes>
