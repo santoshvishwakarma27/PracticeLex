@@ -16,6 +16,7 @@ public class Google1 {
 		System.out.print("jenkins test SCM polling pass TC");
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "Google");
+		System.out.print("Test Commit");
   }
   
   @Test(groups="Fail")
