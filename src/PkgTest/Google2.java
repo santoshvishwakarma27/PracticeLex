@@ -20,6 +20,7 @@ public class Google2 {
 		System.out.print("jenkins test SCM polling pass TC");
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "Google");
+		System.out.print("Changes in repo 1");
   }
   
   //@Test(groups="Fail")
