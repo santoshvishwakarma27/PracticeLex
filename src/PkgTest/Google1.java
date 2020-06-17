@@ -17,6 +17,7 @@ public class Google1 {
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "Google");
 		System.out.print("Test Commit");
+		System.out.print("Changes in repo 2 ");
   }
   
   @Test(groups="Fail")
